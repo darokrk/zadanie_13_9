@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #02111D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #02111D, #037BB5, #02111D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #02111D, #037BB5, #02111D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+label {
+    margin: 20px;
+}
+
+input {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.send {
+    border: 2px solid #075695;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+}

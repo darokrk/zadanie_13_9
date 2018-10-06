@@ -1,4 +1,3 @@
-
 var http = require('http');
 var colors = require('colors');
 
@@ -9,7 +8,9 @@ function start() {
 		console.log("Odebrano zapytanie.".green);
 		console.log("Zapytanie " + request.url + " odebrane.");
 
-		response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
+		response.writeHead(200, {
+			"Content-Type": "text/plain; charset=utf-8"
+		});
 
 
 		switch (request.url) {
@@ -23,8 +24,12 @@ function start() {
 			case '/show':
 				handlers.show(request, response);
 				break;
+			case '/style':
+				handlers.style(request, response);
+				break;
 			default:
 				handlers.error(request, response);
+				break;
 		}
 	}
 
